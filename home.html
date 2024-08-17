@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firebase App with Authentication with Social Networks">
+    <title>CCTB - IST Wev Development</title>
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="css/core.min.css" />
+    <link rel="stylesheet" href="css/vendor_bundle.min.css" />
+    <!-- Link favicon-->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+
+    <!-- Link Firebase JS -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="shadow-xs">
+
+            <!-- Navbar -->
+            <div class="container position-relative">
+
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit">
+
+                    <div class="align-items-start">
+                        <ul class="navbar-nav" id="menuTab">
+
+                            <li class="nav-item dropdown">
+                                <a href="#" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    About Me
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Contact me
+                                </a>
+                            </li>
+
+
+
+                        </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- QUOTE -->
+        <div class="container py-5 mt-5">
+
+            <blockquote class="blockquote text-center">
+                <p class="h1 col-10 col-lg-7 m-auto fst-italic text-muted">
+                    IST 103 - Web Development
+                    We are working with HTML, CSS, JS and Firebase.
+                </p>
+
+                <footer class="blockquote-footer mt-4 fs-5 fw-light text-gray-500">
+                    <cite title="Source Title">CCTB College</cite>
+                </footer>
+            </blockquote>
+
+        </div>
+        <!-- /QUOTE -->
+
+        <!-- LOGOUT -->
+        <div class="section py-5 border-bottom bg-warning">
+            <div class="container">
+                <div class="row text-center-xs">
+
+                    <div class="col-12 col-md-8">
+                        <h3 class="m-0"> We are working with HTML, CSS, JS and Firebase Project!</h3>
+                        <p class="m-0">Click on this option to logout!</p>
+                    </div>
+
+                    <div class="col-12 mt-4 d-block d-md-none"><!-- mobile spacer --></div>
+
+                    <div class="col-12 col-md-4 text-align-end">
+                        <a href="#" class="btn btn-primary rounded-pill d-inline-flex align-items-end px-4"
+                            id="sign-out">
+                            <span class="me-2">Logout</span>
+                            <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /LOGOUT -->
+    </div>
+
+</body>
+
+</html>

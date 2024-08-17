@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firebase App with Authentication with Social Networks">
+    <title>CCTB - Introduction to Internet Programming and Web Applications</title>
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="css/core.min.css" />
+    <link rel="stylesheet" href="css/vendor_bundle.min.css" />
+    <!-- Link favicon-->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+        <!-- Header -->
+        <header id="header" class="shadow-xs">
+
+            <!-- Navbar -->
+            <div class="container position-relative">
+
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit">
+
+                    <div class="align-items-start">
+                        <ul class="navbar-nav" id="menuTab">
+
+                            <li class="nav-item dropdown">
+                                <a href="index.html" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="about.html" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    About Me
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="projects.html" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="contact.html" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Contact me
+                                </a>
+                            </li>
+
+
+
+                        </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- CONTACT FORM -->
+        <section>
+            <div class="container">
+
+                <h2 class="font-weight-light mb-5">
+                    Tell me about your dream
+                </h2>
+
+
+                <div class="row">
+
+                    <div class="col-12 col-lg-8 mb-4">
+
+
+                        <form novalidate action="#" method="POST">
+
+
+                            <div class="form-label-group mb-3">
+                                <input required placeholder="Name" id="contact_name" name="contact_name" type="text"
+                                    class="form-control">
+                                <label for="contact_name">Name</label>
+                            </div>
+
+                            <div class="form-label-group mb-3">
+                                <input required placeholder="Email" id="contact_email" name="contact_email" type="email"
+                                    class="form-control">
+                                <label for="contact_email">Email</label>
+                            </div>
+
+                            <div class="form-label-group mb-3">
+                                <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text"
+                                    class="form-control">
+                                <label for="contact_phone">Phone</label>
+                            </div>
+
+                            <div class="form-label-group mb-4">
+                                <textarea required placeholder="Message" id="contact_message" name="contact_message"
+                                    class="form-control" rows="3"></textarea>
+                                <label for="contact_message">Message</label>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Send Message
+                            </button>
+
+                        </form>
+
+
+
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 mb-4">
+
+                        <div class="d-flex">
+
+                            <div>
+                                <h2 class="fs--25 font-weight-light">
+                                    CCTB Company Inc.
+                                </h2>
+                                <ul class="list-unstyled m-0 fs--15">
+                                    <li class="list-item text-muted">CODE: V6B 4Z8</li>
+                                    <li class="list-item text-muted">NAME: Canadian College of Technology and Business
+                                    </li>
+                                    <li class="list-item text-muted">British Columbia</li>
+                                    <li class="mt--15 list-item text-muted">101 Smithe St, Vancouver, BC V6B 4Z8 /
+                                        Canada
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                        <div class="d-flex mt-4">
+
+
+                            <div>
+                                <h3 class="h4 font-weight-normal">
+                                    Working Hours
+                                </h3>
+                                <ul class="list-unstyled m-0 fs--15">
+                                    <li class="list-item text-muted">Monday &ndash; Friday: 08:00 – 18:00</li>
+                                    <li class="list-item text-muted">Sunday: 10:00 – 14:00</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                        <div class="d-flex mt-4">
+
+
+                            <div>
+                                <h3 class="h4 font-weight-normal">
+                                    Phone Number
+                                </h3>
+                                <ul class="list-unstyled m-0">
+                                    <li class="list-item mb-2 text-gray-500">
+                                        <a class="link-muted" href="tel:321-654-0099">321-654-0099</a>
+                                    </li>
+                                    <li class="list-item mb-2 text-gray-500">
+                                        <a class="link-muted" href="tel:123-456-7890">123-456-7890</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- /CONTACT FORM -->
+
+
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-gray-900 text-white">
+
+            <!-- footer cta -->
+            <div class="container tet-white py-5 d-lg-flex flex-row align-items-lg-center">
+
+                <div class="row g-4 align-items-center">
+                    <h3 class="col-lg-6 h2 mb-0">
+                        IST 103 - Web Development
+                        We are working with HTML, CSS, JS and Firebase.
+                    </h3>
+                    <div class="col text-lg-end">
+                        <a id="sign-out" href="#" target="_blank" rel="noopener"
+                            class="btn btn-warning rounded-pill d-inline-flex align-items-center px-4">
+                            <span class="text-dark me-2">Logout</span>
+                            <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /footer cta -->
+
+            <!-- line divider -->
+            <hr class="bg-gray-500 my-0 container">
+
+
+
+        </footer>
+        <!-- /Footer -->
+
+    </div><!-- /#wrapper -->
+
+</body>
+
+</html>
