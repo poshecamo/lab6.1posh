@@ -1,2 +1,2 @@
-let programmingLang =prompt('what is your favorite programming langiage?');
-document.getElementById("FavProg").textContext = programmingLang;
+let programmingLag = prompt('what is your favorite programming language?');
+document.getElementById("favProg").textContent = programmingLag;
