@@ -17,6 +17,7 @@ CCTB - College
     <!-- Link favicon-->
     <link rel="shortcut icon" type="image/x-icon"
         href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+        
 </head>
 
 <body>
@@ -73,23 +74,19 @@ CCTB - College
         </header>
 
         <!-- QUOTE -->
-        <div class="container py-5 mt-5">
-
-
-
-            <blockquote class="blockquote text-center">
-                <h1 class="mb-5 text-danger">{{User's favorite programming language}}</h1>
-
-                <p class="h1 col-10 col-lg-7 m-auto fst-italic text-muted">
-                    IST 107 - Introduction to Internet Programming and Web Applications.
-                </p>
-
-                <footer class="blockquote-footer mt-4 fs-5 fw-light text-gray-500">
-                    <cite title="Source Title">CCTB College</cite>
-                </footer>
-            </blockquote>
-
-        </div>
+        <!-- Input field and button -->
+<div class="container py-5 mt-5">
+    <blockquote class="blockquote text-center">
+      <h1 class="mb-5">
+        <input type="text" id="languageInput" placeholder="Enter your preferred programming language">
+        <button onclick="showDialog()">Submit</button>
+      </h1>
+      <p class="blockquote-footer mt-4 fs-5 fw-light text-gray-500">
+        CCTB College
+      </p>
+    </blockquote>
+  </div>
+  
         <!-- /QUOTE -->
 
         <!-- LOGOUT -->
@@ -122,7 +119,24 @@ CCTB - College
         </div>
         <!-- /LOGOUT -->
     </div>
-
+    <script>
+        function showDialog() {
+          // Get the user's input from the text box
+          let userInput = document.getElementById('languageInput').value;
+      
+          // If the input is empty, prompt the user
+          if (!userInput) {
+            userInput = prompt("Please enter your preferred programming language:");
+          }
+      
+          // Display the inputted or prompted language on the page
+          if (userInput) {
+            document.getElementById('languageInput').value = userInput;
+            alert("Your preferred programming language is: " + userInput);
+          }
+        }
+      </script>
+      
 </body>
 
 </html>
