@@ -75,18 +75,17 @@ CCTB - College
 
         <!-- QUOTE -->
         <!-- Input field and button -->
-<div class="container py-5 mt-5">
-    <blockquote class="blockquote text-center">
-      <h1 class="mb-5">
-        <input type="text" id="languageInput" placeholder="Enter your preferred programming language">
-        <button onclick="showDialog()">Submit</button>
-      </h1>
-      <p class="blockquote-footer mt-4 fs-5 fw-light text-gray-500">
-        CCTB College
-      </p>
-    </blockquote>
-  </div>
-  
+<blockquote class ='blockquote text-center'>
+    <h1 id ="favProg" class ="mb-5 text-danger">{{users favorite language}}</h1>
+
+    <p class ='h1 col-10 col-lg-7 m-auto fst-italic text text-muted'>
+        IST107
+    </p>
+    <footer class ="blockquote-footer mt-4 fs-5 fw-light text-gray-500" >
+        <cite title ='source title'>CCTB </cite> </footer>
+
+</blockquote>
+
         <!-- /QUOTE -->
 
         <!-- LOGOUT -->
@@ -119,24 +118,7 @@ CCTB - College
         </div>
         <!-- /LOGOUT -->
     </div>
-    <script>
-        function showDialog() {
-          // Get the user's input from the text box
-          let userInput = document.getElementById('languageInput').value;
-      
-          // If the input is empty, prompt the user
-          if (!userInput) {
-            userInput = prompt("Please enter your preferred programming language:");
-          }
-      
-          // Display the inputted or prompted language on the page
-          if (userInput) {
-            document.getElementById('languageInput').value = userInput;
-            alert("Your preferred programming language is: " + userInput);
-          }
-        }
-      </script>
-      
+    <script src="script.js"></script>
 </body>
 
 </html>
